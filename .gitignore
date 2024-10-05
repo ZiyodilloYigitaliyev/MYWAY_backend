@@ -1,0 +1,15 @@
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+.env
+pip-selfcheck.json
+.idea
+.vscode
+sqlite3.db
+.sqlite3

@@ -13,7 +13,6 @@ class AutoTestResult(models.Model):
 #---------------- Avtotest -----------------------------------#
 
 class AutoTestQuestionse(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
     questionID = models.AutoField(primary_key=True)
     question = models.CharField(max_length=150)
     trueAnswer = models.CharField(max_length=1)

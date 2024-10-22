@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from .models import (
-    ServiceAddres, TexServiceOrder, Gas, CarOil, Affidavit, TexServiceMessage,
-    RestoreLicense, Department
+    ServiceAddres, TexServiceOrder, Gas, CarOil, TexServiceMessage
 )
 
 # ServiceAddres serializer
@@ -30,27 +29,11 @@ class CarOilSerializer(serializers.ModelSerializer):
         model = CarOil
         fields = '__all__'
         read_only_fields = ['user']
-# Affidavit serializer
-class AffidavitSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Affidavit
-        fields = '__all__'
-        read_only_fields = ['user']
+
 # TexServiceMessage serializer
 class TexServiceMessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = TexServiceMessage
         fields = '__all__'
         read_only_fields = ['user']
-# RestoreLicense serializer
-class RestoreLicenseSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = RestoreLicense
-        fields = '__all__'
-        read_only_fields = ['user']
-# Department serializer
-class DepartmentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Department
-        fields = '__all__'
-        read_only_fields = ['user']
+

@@ -1,12 +1,11 @@
 from django.contrib import admin
-
-from second_conf.autoTest.models import AutoTestResult
+from .models import *
 
 
 @admin.register(AutoTestResult)
 class AutoTestResultAdmin(admin.ModelAdmin):
     list_display = ('user', 'trueAnswer', 'falseAnswer', 'fullAnswer', 'created')
 
-@admin.register(AutoTestResult)
+@admin.register(AutoTestQuestionse)
 class AutoTestResultAdmin(admin.ModelAdmin):
     list_display = ('questionID', 'question','trueAnswer', )
